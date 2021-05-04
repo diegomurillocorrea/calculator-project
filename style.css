@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+/* I set the body like that to get the calculator in the center of the page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 400px;
+    background-color: black;
+    color: white;
+    border: 8px solid black;
+    border-radius: 15px;
+}
+
+/* The complete calculator with a hover pseudoclass */
+.calculator:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+/* This is the how the screen will look like */
+.screen {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+}
+
+/* These are the general rules the buttons would have */
+.calc-button {
+    background-color: limegreen;
+    color: white;
+    height: 100px;
+    width: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* The green buttons with the hover and active pseudoclass */
+.calc-button:hover {
+    background-color: lime;
+}
+
+.calc-button:active {
+    background-color: green;
+}
+
+/* The blue buttons with the last child, hover and active pseudoclass */
+.calc-button:last-child {
+    background-color: blue;
+}
+
+.calc-button:last-child:hover {
+    background-color: rgb(0, 81, 255);
+}
+
+.calc-button:last-child:active {
+    background-color: darkblue;
+}
+
+/* This is how the C button is going to look like */
+.double {
+    width: 49.7%;
+}
+
+/* This is how the 0 button is going to look like */
+.triple {
+    width: 74.8%;
+}
+
+/* I set this like that to get all the buttons with the same height */
+.calc-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
